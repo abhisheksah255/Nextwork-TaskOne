@@ -1,0 +1,36 @@
+<settings>
+
+<servers>
+  <server>
+    <id>nextworkdemo-domain-nextwork-codeartifact-repo</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+
+<profiles>
+  <profile>
+    <id>nextworkdemo-domain-nextwork-codeartifact-repo</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>nextworkdemo-domain-nextwork-codeartifact-repo</id>
+        <url>https://nextworkdemo-domain-851725313390.d.codeartifact.us-east-1.amazonaws.com/maven/nextwork-codeartifact-repo/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+
+<mirrors>
+  <mirror>
+    <id>nextworkdemo-domain-nextwork-codeartifact-repo</id>
+    <name>nextworkdemo-domain-nextwork-codeartifact-repo</name>
+    <url>https://nextworkdemo-domain-851725313390.d.codeartifact.us-east-1.amazonaws.com/maven/nextwork-codeartifact-repo/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+
+
+</settings>
