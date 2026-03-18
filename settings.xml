@@ -1,8 +1,7 @@
 <settings>
-
 <servers>
   <server>
-    <id>nextworkdemo-domain-nextwork-codeartifact-repo</id>
+    <id>nextwork-nextwork-repo</id>
     <username>aws</username>
     <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
   </server>
@@ -10,27 +9,25 @@
 
 <profiles>
   <profile>
-    <id>nextworkdemo-domain-nextwork-codeartifact-repo</id>
+    <id>nextwork-nextwork-repo</id>
     <activation>
       <activeByDefault>true</activeByDefault>
     </activation>
     <repositories>
       <repository>
-        <id>nextworkdemo-domain-nextwork-codeartifact-repo</id>
-        <url>https://nextworkdemo-domain-851725313390.d.codeartifact.us-east-1.amazonaws.com/maven/nextwork-codeartifact-repo/</url>
+        <id>nextwork-nextwork-repo</id>
+        <url>https://nextwork-083011581551.d.codeartifact.us-east-1.amazonaws.com/maven/nextwork-repo/</url>
       </repository>
     </repositories>
   </profile>
 </profiles>
-
 <mirrors>
   <mirror>
-    <id>nextworkdemo-domain-nextwork-codeartifact-repo</id>
-    <name>nextworkdemo-domain-nextwork-codeartifact-repo</name>
-    <url>https://nextworkdemo-domain-851725313390.d.codeartifact.us-east-1.amazonaws.com/maven/nextwork-codeartifact-repo/</url>
+    <id>nextwork-nextwork-repo</id>
+    <name>nextwork-nextwork-repo</name>
+    <url>https://nextwork-083011581551.d.codeartifact.us-east-1.amazonaws.com/maven/nextwork-repo/</url>
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
-
 
 </settings>
